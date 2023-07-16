@@ -1,0 +1,26 @@
+{% extends "core/base.html" %}
+
+{% block title %}Sobre mi{% endblock %}
+
+{% block background %}{% load static %}{% static '/img/acerca.jpg' %}{% endblock %}
+
+{% block headers %}
+<span class="subheading">Acerca de</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-2 col-md-3 offset-lg-1">
+      <div>
+        <img class="img-fluid avatar" src="{% static '/img/avatar.jpg' %}" alt="">
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-8">
+      <h2 class="section-heading">Sobre mí</h2>
+      <p>Soy Cristian Pavon, estudiante de programación en el programa Codo a Codo.</p>
+      
+    </div>
+  </div>
+  
+    
+{% endblock %}
